@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --main-dark-color: #22222c;
+    --main-light-color: #b5b5b5;
+    --main-color-3: #6e43a3;
+    --main-color-4: #b19cd9;
+    --main-color-5: #ede3ff;
+    --main-color-6: #e6e6e6;
+    --main-font: 'Quicksand', sans-serif;
+    --shadow: rgb(34, 34, 44);
+}
+
+html {
+    box-sizing: border-box; /* asegura que el ancho y alto incluya padding y border */
+    font-size: 16px; /* establece el tamaño base de fuente para todo el documento */
+    padding: 0;
+}
+
+body {
+    margin: 0; /* elimina el margen predeterminado en el cuerpo del documento */
+    font-family: var(--main-font); /* establece la fuente predeterminada para el texto del cuerpo */
+    font-size: 1rem; /* utiliza el tamaño base de fuente definido en el elemento html */
+    line-height: 1.5; /* establece la altura de línea predeterminada para mejorar la legibilidad */
+    background-color: var(--main-color-6);
+    color: var(--main-dark-color); /* establece el color de texto predeterminado */
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+ul > a {
+    padding: 10px 25px;
+    font-weight: lighter;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.9;
+    border-radius: 50px;
+    list-style: none;
+    color: var(--main-color-3);
+
+    transition: all 100ms;
+}
+
+ul > a:hover {
+    color: var(--main-color-6);
+    background-color: var(--main-color-4);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    user-select: none;
+    color: var(--main-color-3);
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 10vh;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    /* background-color: var(--main-background-color-4); */
+}
+
+.content {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    /* height: 60vh; */
+    /* margin-bottom: 20vh; */
+}
+
+.words {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.button-light {
+    padding: 20px 40px;
+    background-color: var(--main-color-4);
+    color: var(--main-color-6);
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    border: 0px solid;
+    border-radius: 50px;
+    box-shadow: 0 2px 20px -10px var(--main-dark-color);
+    transition: all 100ms;
+}
+
+.button-light:hover {
+    transform: scale(110%);
+}
+
+.buttons {
+    padding: 0 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.buttons > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    border-radius: 50px 0 0 50px;
+    box-shadow: 0 2px 20px -10px var(--main-dark-color);
+}
+
+.sel {
+    text-align: center;
+    height: 50px;
+    border: none;
+    font-family: var(--main-font);
+    font-weight: 400;
+    background-color: var(--main-color-6);
+}
+.sel-left {
+    padding: 0 20px 0 30px;
+    width: 125px;
+    border-radius: 50px 0 0 50px;
+    z-index: 1;
+}
+
+.sel-middle {
+    width: 100%;
+    border-radius: 0.1px;
+    z-index: 1;
+}
+
+.sel-right {
+    padding: 0 30px 0 20px;
+    width: 20%;
+    border-radius: 0 50px 50px 0;
+    background-color: var(--main-color-3);
+    color: var(--main-color-6);
+    box-shadow: 0 2px 20px -10px var(--main-dark-color);
+    transition: all 100ms;
+}
+
+.sel-right:hover{
+    transform: scale(110%);
+    font-size: 1.1rem;
+}
